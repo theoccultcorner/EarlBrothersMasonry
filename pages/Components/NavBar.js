@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+ 
  
 import {
   AppBar,
@@ -13,12 +13,7 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
-const drawerWidth = 240;
-const useStyles = makeStyles((theme) => ({
  
- 
- 
-}));
 
 function Navbar() {
   const classes = useStyles();
