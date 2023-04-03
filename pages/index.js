@@ -28,12 +28,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     boxSizing: 'border-box', // include padding in width/height
   },
-  card: {
-    maxWidth: 500,
-    width: '100%',
-    margin: 'auto',
-    backgroundColor: 'white',
-  },
+ 
   body: {
     backgroundColor: 'white',
     color: 'black',
