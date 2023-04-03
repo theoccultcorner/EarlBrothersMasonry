@@ -8,13 +8,13 @@ function ParallaxImage({ imageUrl }) {
  
 
   return (
-    <Parallax bgImage={imageUrl} strength={500}>
+    <Parallax bgImage={imageUrl} strength={500} style={{ height: parallaxHeight }}>
+    <div style={{ height: parallaxHeight }}>
       <div>
-        <div>
-          Earl Brothers Masonry
-        </div>
+        Earl Brothers Masonry
       </div>
-    </Parallax>
+    </div>
+  </Parallax>
   );
 }
 
