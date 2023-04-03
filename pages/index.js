@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+ 
 import { 
   Card, 
   CardContent, 
@@ -13,10 +14,11 @@ import {
 import { Phone } from '@material-ui/icons';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
- 
+import FacebookSDK from './Components/FacebookSDK';
 import Services from './Components/Services';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
+ 
  
 
 export default function Home() {
@@ -69,6 +71,7 @@ export default function Home() {
      
         <AboutUs />
         <Services />
+        <FacebookSDK />
         <ImageListComponent />
         <Grid container justifyContent="center">
           <Card>
