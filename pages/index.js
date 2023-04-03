@@ -12,14 +12,7 @@ import ImageListComponent from './Components/ImageListComponent';
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    '& .MuiTextField-root': {
-      margin: theme.spacing(1),
-      width: '100%',
-      maxWidth: '25ch',
-    },
-   
-  },
+ 
  
   body: {
     backgroundColor: 'white',
