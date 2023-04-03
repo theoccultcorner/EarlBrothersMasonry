@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import { makeStyles } from '@material-ui/core/styles';
+ 
 import { Card, CardContent, Grid, TextField, Button } from '@material-ui/core';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
@@ -8,28 +8,15 @@ import AboutUs from './Components/AboutUs';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
 
-
-const drawerWidth = 240;
-
-const useStyles = makeStyles((theme) => ({
  
  
-  body: {
-    backgroundColor: 'white',
-    color: 'black',
-  },
- 
- 
-}));
-
 export default function Home() {
   const [inputName, setInputName] = useState("");
   const [inputPhone, setInputPhone] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [inputText, setInputText] = useState("");
   const [result, setResult] = useState();
-
-  const classes = useStyles();
+ 
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -71,15 +58,15 @@ export default function Home() {
         <link rel="icon" href=" " />
       </Head>
       <Navbar />
-      <main className={classes.body}>
+      <main  >
  
 
       <AboutUs />
       <ImageListComponent />
         <Grid container justifyContent="center">
-          <Card className={classes.card}>
+          <Card  >
             <CardContent>
-              <form onSubmit={onSubmit} className={classes.root}>
+              <form onSubmit={onSubmit}  >
                 <TextField
                   required
                   label="Name"

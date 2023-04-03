@@ -16,7 +16,7 @@ import MenuIcon from '@material-ui/icons/Menu';
  
 
 function Navbar() {
-  const classes = useStyles();
+ 
   const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -29,12 +29,12 @@ function Navbar() {
  
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" className={classes.appBar}>
+    <div >
+      <AppBar position="static"  >
         <Toolbar>
           <IconButton
             edge="start"
-            className={classes.menuButton}
+             
             color="inherit"
             aria-label="menu"
             onClick={handleDrawerOpen}
@@ -45,16 +45,14 @@ function Navbar() {
         </Toolbar>
       </AppBar>
       <Drawer
-        className={classes.drawer}
+     
         variant="temporary"
         anchor="left"
         open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
+        
         onClose={handleDrawerClose}
       >
-        <div className={classes.drawerContainer}>
+        <div >
           <List>
             <ListItem button>
               <ListItemText primary="Home" />
