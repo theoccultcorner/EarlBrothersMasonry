@@ -16,9 +16,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
  
-  drawerContainer: {
-    overflow: 'auto',
-  },
  
  
 }));
