@@ -8,8 +8,9 @@ import {
   Button, 
   List, 
   ListItem, 
-  
+  Fab
 } from '@material-ui/core';
+import { Phone } from '@material-ui/icons';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
 import Landing from './Components/Landing';
@@ -66,7 +67,7 @@ export default function Home() {
       <main>
         <Landing />
         <AboutUs />
-<Services />
+        <Services />
         <ImageListComponent />
         <Grid container justifyContent="center">
           <Card>
@@ -116,6 +117,9 @@ export default function Home() {
             </CardContent>
           </Card>
         </Grid>
+        <Fab color="primary" aria-label="call" style={{ position: 'fixed', bottom: 20, right: 20 }} onClick={() => window.open('tel:8055541361')}>
+          <Phone />
+        </Fab>
         <Footer />
       </main>
     </div>
