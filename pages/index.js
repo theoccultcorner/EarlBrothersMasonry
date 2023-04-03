@@ -1,22 +1,26 @@
 import Head from "next/head";
 import { useState } from "react";
- 
-import { Card, CardContent, Grid, TextField, Button } from '@material-ui/core';
+import { 
+  Card, 
+  CardContent, 
+  Grid, 
+  TextField, 
+  Button, 
+  List, 
+  ListItem, 
+  ListItemText 
+} from '@material-ui/core';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
- 
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
 
- 
- 
 export default function Home() {
   const [inputName, setInputName] = useState("");
   const [inputPhone, setInputPhone] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [inputText, setInputText] = useState("");
   const [result, setResult] = useState();
- 
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -45,7 +49,6 @@ export default function Home() {
       setInputEmail("");
       setInputText("");
     } catch(error) {
-      // Consider implementing your own error handling logic here
       console.error(error);
       alert(error.message);
     }
@@ -58,42 +61,52 @@ export default function Home() {
         <link rel="icon" href=" " />
       </Head>
       <Navbar />
-      <main  >
- 
-
-      <AboutUs />
-      <ImageListComponent />
+      <main>
+        <AboutUs />
+        <ImageListComponent />
         <Grid container justifyContent="center">
-          <Card  >
+          <Card>
             <CardContent>
-              <form onSubmit={onSubmit}  >
-                <TextField
-                  required
-                  label="Name"
-                  value={inputName}
-                  onChange={(e) => setInputName(e.target.value)}
-                />
-                <TextField
-                  required
-                  label="Phone"
-                  value={inputPhone}
-                  onChange={(e) => setInputPhone(e.target.value)}
-                />
-                <TextField
-                  required
-                  label="Email"
-                  value={inputEmail}
-                  onChange={(e) => setInputEmail(e.target.value)}
-                />
-                <TextField
-                  required
-                  label="Text"
-                  multiline
-                  rows={4}
-                  value={inputText}
-                  onChange={(e) => setInputText(e.target.value)}
-                />
-                <Button type="submit" variant="contained">Submit</Button>
+              <form onSubmit={onSubmit}>
+                <List>
+                  <ListItem>
+                    <TextField
+                      required
+                      label="Name"
+                      value={inputName}
+                      onChange={(e) => setInputName(e.target.value)}
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <TextField
+                      required
+                      label="Phone"
+                      value={inputPhone}
+                      onChange={(e) => setInputPhone(e.target.value)}
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <TextField
+                      required
+                      label="Email"
+                      value={inputEmail}
+                      onChange={(e) => setInputEmail(e.target.value)}
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <TextField
+                      required
+                      label="Text"
+                      multiline
+                      rows={4}
+                      value={inputText}
+                      onChange={(e) => setInputText(e.target.value)}
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <Button type="submit" variant="contained">Submit</Button>
+                  </ListItem>
+                </List>
               </form>
               <div>{result}</div>
             </CardContent>
@@ -101,7 +114,6 @@ export default function Home() {
         </Grid>
         <Footer />
       </main>
-      
     </div>
   );
 }
