@@ -6,7 +6,7 @@ const AboutUs = () => {
 return (
 <Box sx={{ maxWidth: 800, margin: '0 auto' }}>
 <Typography variant="h4" gutterBottom>
-About Us
+Earl Brothers Masonry
 </Typography>
 <Typography variant="body1" gutterBottom>
 Earl Brothers Masonry is a family-owned business with over 20 years of experience in all phases of masonry including brick, block, and stone. Our team is made up of three Santa Maria natives who are dedicated to providing the highest quality masonry work to our customers.
