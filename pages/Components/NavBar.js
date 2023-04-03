@@ -30,6 +30,7 @@ function Navbar() {
             edge="start"
             color="inherit"
             aria-label="menu"
+            style={{ marginLeft: "auto" }}
             onClick={handleDrawerOpen}
           >
             <MenuIcon />
@@ -47,7 +48,8 @@ function Navbar() {
             <ListItem button>
               <ListItemText primary="About" />
             </ListItem>
-              <ListItem button>
+             
+            <ListItem button>
               <ListItemText primary="Images" />
             </ListItem>
           </List>
