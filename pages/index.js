@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardContent, Grid, TextField, Button } from '@material-ui/core';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
-import ParallaxImage from './Components/ParallaxImage';
+ 
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
 
@@ -72,7 +72,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className={classes.body}>
-      <ParallaxImage imageUrl="https://as2.ftcdn.net/v2/jpg/03/11/48/35/1000_F_311483551_zrqYpwxgcpYuRolNEC9XAkFQXDDj7Vww.jpg" />
+ 
 
       <AboutUs />
       <ImageListComponent />
