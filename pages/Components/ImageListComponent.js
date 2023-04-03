@@ -56,7 +56,7 @@ const itemData = [
 
 function ImageListComponent() {
     return (
-      <Box sx={{ width: '80%', height: 800, overflowY: 'hidden', margin: '0 auto' }}>
+      <Box sx={{ width: '80%', height: 500, overflowY: 'hidden', margin: '0 auto' }}>
         <ImageList variant="masonry" cols={3} gap={8}>
           {itemData.map((item) => (
             <ImageListItem key={item.img} sx={{ height: 250 }}>
