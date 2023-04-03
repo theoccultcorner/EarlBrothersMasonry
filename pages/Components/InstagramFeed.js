@@ -10,7 +10,7 @@ const InstagramFeed = () => {
     const fetchStories = async () => {
       try {
         const response = await axios.get(
-          `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=IGQVJWZATFSdnplRmltZAEpoY2k0M1lGNjFPRUZATTGpYMnFxME5wbENhRDU3Rl96UTVkeEdscXZAUMVl4V2JhX1FTQkU3azFuMlhnck9halRpdDdUWWhXZA2tYdW4tNDR6b2dLbG5hNDREX25CRXZAlbGJUQwZDZD}`
+          `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=${process.env.INSTAGRAM_ACCESS_TOKEN}`
         );
         setStories(response.data.data);
       } catch (error) {
@@ -23,7 +23,7 @@ const InstagramFeed = () => {
 
   return (
     <Container>
-      
+     
       {stories.length > 0 ? (
         <Stories
           stories={stories.map((story) => ({
