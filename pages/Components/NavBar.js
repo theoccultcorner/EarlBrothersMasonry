@@ -18,12 +18,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
+  
+ 
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
@@ -34,9 +30,7 @@ const useStyles = makeStyles((theme) => ({
   drawerContainer: {
     overflow: 'auto',
   },
-  appBar: {
-    backgroundColor: '#000',
-  },
+ 
   logo: {
     height: '50px',
   },
