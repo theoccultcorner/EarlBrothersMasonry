@@ -18,15 +18,7 @@ const useStyles = makeStyles((theme) => ({
       width: '100%',
       maxWidth: '25ch',
     },
-    '& .MuiButton-root': {
-      margin: theme.spacing(1),
-    },
-    '& .MuiButton-contained': {
-      backgroundColor: 'black',
-      color: 'white',
-    },
-    padding: theme.spacing(2),
-    boxSizing: 'border-box', // include padding in width/height
+   
   },
  
   body: {
