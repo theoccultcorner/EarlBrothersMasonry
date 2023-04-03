@@ -14,7 +14,7 @@ import {
 import { Phone } from '@material-ui/icons';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
-import FacebookSDK from './Components/FacebookSDK';
+import InstagramFeed from './Components/InstagramFeed';
 import Services from './Components/Services';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
@@ -71,7 +71,7 @@ export default function Home() {
      
         <AboutUs />
         <Services />
-        <FacebookSDK />
+     
         <ImageListComponent />
         <Grid container justifyContent="center">
           <Card>
@@ -124,6 +124,7 @@ export default function Home() {
         <Fab color="primary" aria-label="call" style={{ position: 'fixed', bottom: 20, right: 20 }} onClick={() => window.open('tel:8055541361')}>
           <Phone />
         </Fab>
+        <InstagramFeed />
         <Footer />
       </main>
     </div>
