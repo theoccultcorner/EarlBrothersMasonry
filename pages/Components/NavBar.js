@@ -58,16 +58,7 @@ function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-          
-          <div>
-            <img
-              src=" "
-              alt="My App Logo"
-              className={classes.logo}
-              onError={(e) => console.log('error', e)}
-              onLoad={() => console.log('loaded')}
-            />
-          </div>
+         
         </Toolbar>
       </AppBar>
       <Drawer
