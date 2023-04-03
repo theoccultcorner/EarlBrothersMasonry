@@ -25,7 +25,7 @@ const itemData = [
     title: 'Blinds',
   },
   {
-    img: 'http://buildipedia.com/media/k2/items/cache/e44a6f32e15cb53ee479b2697e759e2e_XL.jpg',
+    img: 'https://www.liveabout.com/thmb/HQRiWxQu9kO5--IE9TnfJTeJFp0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1071717824-5c463beb46e0fb0001d9d626.jpg',
     title: 'Chairs',
   },
   {
