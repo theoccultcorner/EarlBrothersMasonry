@@ -1,7 +1,6 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
+import { Grid, Paper } from '@material-ui/core';
+import { styled } from '@mui/material/styles';
 
 const itemData = [
   {
@@ -54,25 +53,49 @@ const itemData = [
   },
 ];
 
-function ImageListComponent() {
-    return (
-      <Box sx={{ width: '80%', height: 500, overflowY: 'hidden', margin: '0 auto' }}>
-        <ImageList variant="masonry" cols={3} gap={8}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img} sx={{ height: 250 }}>
-           <img
-  src={`${item.img}?w=248&fit=crop&auto=format`}
-  srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-  alt={item.title}
-  loading="lazy"
-  style={{ objectFit: 'cover', objectPosition: 'bottom' }}
-/>
+const ImageGrid = styled(Grid)(({ theme }) => ({
+  margin: '0 auto',
+  width: '80%',
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+  },
+}));
 
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Box>
-    );
-  }
-  
+const ImageItem = styled(Paper)(({ theme }) => ({
+  position: 'relative',
+  height: 250,
+  [theme.breakpoints.down('sm')]: {
+    width: '100% !important',
+    height: 200,
+  },
+  '& img': {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    objectPosition: 'bottom',
+  },
+}));
+
+function ImageListComponent() {
+  return (
+    <ImageGrid container spacing={2}>
+      {itemData.map((item) => (
+        <Grid item xs={12} sm={6} md={4} key={item.img}>
+          <ImageItem>
+            <img
+              src={`${item.img}?w=248&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              alt={item.title}
+              loading="lazy"
+            />
+          </ImageItem>
+        </Grid>
+      ))}
+    </ImageGrid>
+  );
+}
+
 export default ImageListComponent;

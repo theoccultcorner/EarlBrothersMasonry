@@ -7,17 +7,17 @@ export function Landing() {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <Typography variant="h4">
-            Welcome to My Landing Page
+           Earl Brothers Masonry
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus hendrerit enim, sit amet dignissim arcu pellentesque quis.
+            Welcome!
           </Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography variant="body1">
-            Nullam lobortis consequat elit, sed fringilla nulla tempor sit amet.
+            Central Coast, California
           </Typography>
         </Grid>
       </Grid>
