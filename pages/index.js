@@ -13,10 +13,11 @@ import {
 import { Phone } from '@material-ui/icons';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
-import Landing from './Components/Landing';
+import ParallaxImage from './Components/ParallaxImage';
 import Services from './Components/Services';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
+import earlBrothersImage from './Components/earl-brothers-masonry.jpg';
 
 export default function Home() {
   const [inputName, setInputName] = useState("");
@@ -65,7 +66,10 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-        <Landing />
+      <div>
+      <ParallaxImage image={earlBrothersImage} title="Earl Brothers Masonry" />
+      <p>Welcome to Earl Brothers Masonry's website!</p>
+    </div>
         <AboutUs />
         <Services />
         <ImageListComponent />
