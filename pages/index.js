@@ -34,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
   },
   body: {
-    backgroundColor: 'black',
-    color: 'white',
+    backgroundColor: 'white',
+    color: 'black',
   },
  
  
