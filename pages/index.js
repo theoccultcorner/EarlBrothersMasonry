@@ -8,10 +8,12 @@ import {
   Button, 
   List, 
   ListItem, 
-  ListItemText 
+  
 } from '@material-ui/core';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
+import Landing from './Components/Landing';
+import Services from './Components/Services';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
 
@@ -62,7 +64,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
+        <Landing />
         <AboutUs />
+<Services />
         <ImageListComponent />
         <Grid container justifyContent="center">
           <Card>
