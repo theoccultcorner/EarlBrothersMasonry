@@ -72,7 +72,7 @@ function Navbar() {
           
           <div>
             <img
-              src="https://earlbrothersmasonry.com/img/logo.png"
+              src=" "
               alt="My App Logo"
               className={classes.logo}
               onError={(e) => console.log('error', e)}
