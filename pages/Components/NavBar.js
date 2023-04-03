@@ -56,7 +56,7 @@ function Navbar() {
           <Divider />
           <List>
             <ListItem button>
-              <ListItemText primary="Contact" />
+              <ListItemText href="#contactus" primary="Contact" />
             </ListItem>
           
           </List>

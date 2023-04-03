@@ -74,7 +74,7 @@ export default function Home() {
      
         <ImageListComponent />
         <Grid container justifyContent="center">
-          <Card>
+          <Card id="contactus">
             <CardContent>
               <form onSubmit={onSubmit}>
                 <List>
@@ -121,7 +121,7 @@ export default function Home() {
             </CardContent>
           </Card>
         </Grid>
-        <Fab color="primary" aria-label="call" style={{ position: 'fixed', bottom: 20, right: 20 }} onClick={() => window.open('tel:8055541361')}>
+        <Fab color="primary" aria-label="call" style={{ backgroundColor: 'black', position: 'fixed', bottom: 20, right: 20 }} onClick={() => window.open('tel:8055541361')}>
           <Phone />
         </Fab>
        
