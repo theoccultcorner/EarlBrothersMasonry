@@ -1,20 +1,14 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+ 
 import { Typography } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-  footer: {
-    backgroundColor: theme.palette.background.paper,
  
-    color: '#696969',
-  },
-}));
 
 function Footer() {
-  const classes = useStyles();
+  
 
   return (
-    <footer className={classes.footer}>
+    <footer>
       <Typography variant="h6" align="center" gutterBottom>
        Earl Brothers Masonry
       </Typography>
