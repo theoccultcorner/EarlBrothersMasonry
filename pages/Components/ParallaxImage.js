@@ -3,11 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Parallax } from 'react-parallax';
 
 const useStyles = makeStyles((theme) => ({
-  parallaxContainer: {
-    position: 'relative',
-    height: '100vh',
-    overflow: 'hidden',
-  },
+ 
  
 }));
 
