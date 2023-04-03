@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 500,
     width: '100%',
     margin: 'auto',
+    backgroundColor: 'white',
   },
   body: {
     backgroundColor: 'white',
