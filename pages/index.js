@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { 
   Card, 
+  AppBar,
   CardContent, 
   Grid, 
   TextField, 
@@ -60,7 +61,7 @@ export default function Home() {
         <title>AI</title>
         <link rel="icon" href=" " />
       </Head>
-      <Navbar />
+        <AppBar position="static" style={{ backgroundColor: 'black' }}>
       <main>
         <AboutUs />
         <ImageListComponent />
