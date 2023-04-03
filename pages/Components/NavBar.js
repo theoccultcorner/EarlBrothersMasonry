@@ -15,9 +15,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
+ 
   
  
   drawer: {
@@ -31,9 +29,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'auto',
   },
  
-  logo: {
-    height: '50px',
-  },
+ 
 }));
 
 function Navbar() {
