@@ -7,6 +7,10 @@ import AboutUs from './Components/AboutUs';
 import ParallaxImage from './Components/ParallaxImage';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
+
+
+const drawerWidth = 240;
+
 const useStyles = makeStyles((theme) => ({
   root: {
     '& .MuiTextField-root': {
@@ -33,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'black',
     color: 'white',
   },
+ 
+ 
 }));
 
 export default function Home() {
