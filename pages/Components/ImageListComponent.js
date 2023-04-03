@@ -27,30 +27,7 @@ const itemData = [
     img: 'https://www.liveabout.com/thmb/HQRiWxQu9kO5--IE9TnfJTeJFp0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1071717824-5c463beb46e0fb0001d9d626.jpg',
     title: 'Chairs',
   },
-  {
-    img: 'https://thumbs.dreamstime.com/b/masonry-rough-bricks-texture-hd-picture-82336144.jpg',
-    title: 'Laptop',
-  },
-  {
-    img: 'https://www.texturex.com/wp-content/uploads/2018/03/brick-wall-texture-stock-photo-wallpaper-stone-masonry-5-500x333.jpg',
-    title: 'Doors',
-  },
-  {
-    img: 'https://thumbs.dreamstime.com/b/beat-up-rock-wall-5887796.jpg',
-    title: 'Coffee',
-  },
-  {
-    img: 'https://as1.ftcdn.net/v2/jpg/01/25/05/56/1000_F_125055607_X7vJu0cGmVBR0FqJkRfRnpYk8vgiuSII.jpg',
-    title: 'Storage',
-  },
-  {
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQur_aAxiTkxqzNBWjv0vp5cUmm-TOOAjKFiA&usqp=CAU',
-    title: 'Candle',
-  },
-  {
-    img: 'https://www.engineeringcivil.com/wp-content/uploads/2022/02/Fig-1-Ashlar-Masonry.jpg',
-    title: 'Coffee table',
-  },
+   
 ];
 
 const ImageGrid = styled(Grid)(({ theme }) => ({
