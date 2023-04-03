@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
- 
- 
 import {
   AppBar,
   Toolbar,
@@ -13,10 +11,7 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
- 
-
 function Navbar() {
- 
   const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -26,52 +21,42 @@ function Navbar() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
- 
 
   return (
-    <div >
-      <AppBar position="static"  >
+    <div>
+      <AppBar position="static" style={{ backgroundColor: 'black' }}>
         <Toolbar>
           <IconButton
             edge="start"
-             
             color="inherit"
             aria-label="menu"
             onClick={handleDrawerOpen}
           >
             <MenuIcon />
           </IconButton>
-         
         </Toolbar>
       </AppBar>
       <Drawer
-     
         variant="temporary"
         anchor="left"
         open={open}
-        
         onClose={handleDrawerClose}
       >
-        <div >
+        <div>
           <List>
-            <ListItem button>
-              <ListItemText primary="Home" />
-            </ListItem>
             <ListItem button>
               <ListItemText primary="About" />
             </ListItem>
-            <ListItem button>
-              <ListItemText primary="Contact" />
+              <ListItem button>
+              <ListItemText primary="Images" />
             </ListItem>
           </List>
           <Divider />
           <List>
             <ListItem button>
-              <ListItemText primary="Login" />
+              <ListItemText primary="Contact" />
             </ListItem>
-            <ListItem button>
-              <ListItemText primary="Register" />
-            </ListItem>
+          
           </List>
         </div>
       </Drawer>
