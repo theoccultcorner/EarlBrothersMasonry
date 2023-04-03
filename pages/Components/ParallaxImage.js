@@ -8,18 +8,7 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     overflow: 'hidden',
   },
-  title: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    textAlign: 'center',
-    color: '#fff',
-    textTransform: 'uppercase',
-    fontWeight: 'bold',
-    fontSize: '3rem',
-    zIndex: 1,
-  },
+ 
 }));
 
 function ParallaxImage({ imageUrl }) {
