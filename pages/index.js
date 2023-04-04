@@ -3,18 +3,20 @@ import { useState } from "react";
  
 import { 
   Card, 
+ 
   CardContent, 
   Grid, 
   TextField, 
   Button, 
-  List, 
+  List,
+  
   ListItem, 
   Fab
 } from '@material-ui/core';
 import { Phone } from '@material-ui/icons';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
- 
+import InstagramStories from './Components/InstagramStories'; 
 import Services from './Components/Services';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
@@ -124,7 +126,9 @@ export default function Home() {
         <Fab color="primary" aria-label="call" style={{ backgroundColor: 'black', position: 'fixed', bottom: 20, right: 20 }} onClick={() => window.open('tel:8055541361')}>
           <Phone />
         </Fab>
-       
+         
+        <InstagramStories maxWidth="md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />
+ 
         <Footer />
       </main>
     </div>
