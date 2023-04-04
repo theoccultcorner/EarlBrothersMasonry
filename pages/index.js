@@ -16,7 +16,7 @@ import {
 import { Phone } from '@material-ui/icons';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
-import InstagramStories from './Components/InstagramStories'; 
+import InstagramFeed from './Components/InstagramFeed'; 
 import Services from './Components/Services';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
@@ -127,7 +127,7 @@ export default function Home() {
           <Phone />
         </Fab>
          
-        <InstagramStories maxWidth="md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />
+        <InstagramFeed maxWidth="md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />
  
         <Footer />
       </main>
