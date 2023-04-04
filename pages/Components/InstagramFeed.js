@@ -1,25 +1,7 @@
-import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Paper, Typography } from '@material-ui/core';
 
-const accessToken = 'https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=' + process.env.NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN;
-
-const InstagramFeed = () => {
-  const [photos, setPhotos] = useState([]);
-
-  useEffect(() => {
-    const fetchPhotos = async () => {
-      try {
-        const response = await axios.get(accessToken);
-        setPhotos(response.data.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchPhotos();
-  }, []);
-
+const InstagramFeed = ({ photos }) => {
   return (
     <Paper>
       {photos.length > 0 ? (
@@ -36,5 +18,30 @@ const InstagramFeed = () => {
     </Paper>
   );
 };
+
+export async function getStaticProps() {
+  const accessToken = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN}`;
+
+  try {
+    const response = await axios.get(accessToken);
+    const photos = response.data.data;
+
+    return {
+      props: {
+        photos
+      },
+      revalidate: 60 // revalidate the data every 60 seconds
+    };
+  } catch (error) {
+    console.error(error);
+
+    return {
+      props: {
+        photos: []
+      },
+      revalidate: 60
+    };
+  }
+}
 
 export default InstagramFeed;

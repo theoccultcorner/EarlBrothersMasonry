@@ -1,18 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
- 
-import { 
-  Card, 
- 
-  CardContent, 
-  Grid, 
-  TextField, 
-  Button, 
-  List,
-  
-  ListItem, 
-  Fab
-} from '@material-ui/core';
+import { Card, CardContent, Grid, TextField, Button, List, ListItem, Fab } from '@material-ui/core';
 import { Phone } from '@material-ui/icons';
 import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
@@ -21,8 +9,6 @@ import Services from './Components/Services';
 import Navbar from './Components/NavBar';
 import ImageListComponent from './Components/ImageListComponent';
  
- 
-
 export default function Home() {
   const [inputName, setInputName] = useState("");
   const [inputPhone, setInputPhone] = useState("");
@@ -30,6 +16,8 @@ export default function Home() {
   const [inputText, setInputText] = useState("");
   const [result, setResult] = useState();
 
+
+  
   async function onSubmit(event) {
     event.preventDefault();
     try {
@@ -62,6 +50,8 @@ export default function Home() {
     }
   }
 
+  
+
   return (
     <div>
       <Head>
@@ -70,11 +60,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-     
-        <AboutUs />
-        <Services />
-     
-        <ImageListComponent />
+      <AboutUs />
+      <Services />
+      <ImageListComponent />
         <Grid container justifyContent="center">
           <Card id="contactus">
             <CardContent>
@@ -126,11 +114,11 @@ export default function Home() {
         <Fab color="primary" aria-label="call" style={{ backgroundColor: 'black', position: 'fixed', bottom: 20, right: 20 }} onClick={() => window.open('tel:8055541361')}>
           <Phone />
         </Fab>
-         
-        <InstagramFeed maxWidth="md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />
- 
-        <Footer />
+         <InstagramFeed maxWidth="md" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />
+          <Footer />
       </main>
     </div>
   );
 }
+
+ 
